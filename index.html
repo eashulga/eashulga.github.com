@@ -395,43 +395,6 @@
             <dd class="clear"></dd>
             <h4><A HREF = "https://scholar.google.com/citations?hl=en&user=yy5IG9gAAAAJ">Google scholar.</A></h4>
 
-              <div id="article-list"></div>
-
-              <script src="https://cdn.jsdelivr.net/npm/bibtex-parser-js@1.2.1/dist/bibtex-parser.min.js"></script>
-              <script>
-                  // URL of the BibTeX file hosted on GitHub
-                  const bibFileUrl = 'https://github.com/eashulga/eashulga.github.com/blob/main/Content/mypubs.bib';
-
-                  // Fetch the BibTeX file from GitHub
-                  fetch(bibFileUrl)
-                      .then(response => response.text())  // Convert the response to text (BibTeX data)
-                      .then(bibtexData => {
-                          // Parse the BibTeX data
-                          const bib = new BibtexParser();
-                          const bibEntries = bib.parse(bibtexData);
-
-                          // Generate HTML content for each article
-                          let htmlContent = '';
-                          bibEntries.forEach(entry => {
-                              htmlContent += `
-                                  <div class="article">
-                                      <h2>${entry.entryTags.title}</h2>
-                                      <p><strong>Author(s):</strong> ${entry.entryTags.author}</p>
-                                      <p><strong>Journal:</strong> ${entry.entryTags.journal || 'N/A'}</p>
-                                      <p><strong>Year:</strong> ${entry.entryTags.year}</p>
-                                      <p><strong>DOI:</strong> <a href="https://doi.org/${entry.entryTags.doi}" target="_blank">${entry.entryTags.doi}</a></p>
-                                  </div>
-                              `;
-                          });
-
-                          // Insert the HTML content into the page
-                          document.getElementById('article-list').innerHTML = htmlContent;
-                      })
-                      .catch(error => {
-                          console.error('Error fetching or parsing BibTeX file:', error);
-                          document.getElementById('article-list').innerHTML = '<p>Error loading articles.</p>';
-                      });
-              </script>
     
             <dd class="clear"></dd>
             <h3>Highlights:</h2>`
