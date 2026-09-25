@@ -4,7 +4,7 @@
 <head>
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-     <title>E. Shulga One Page Resume</title>
+     <title>E. Shulga — Curriculum Vitae</title>
 
      <style type="text/css">
         html {
@@ -12,12 +12,12 @@
             box-sizing: border-box
         }
 
-        * { 
-            margin: 0; 
-            padding: 0; 
+        * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
             }
-        body { font: 1.6rem Helvetica, Sans-Serif; line-height: 2.4rem; 
+        body { font: 1.6rem Helvetica, Sans-Serif; line-height: 2.4rem;
         background-image: url(images/noisy-texture-200x200-o5-d10-c-ffffff-t0.png); }
         .clear { clear: both; }
         #page-wrap { width: 80rem; margin: 4rem auto 6rem; }
@@ -34,6 +34,25 @@
         dt { font-style: italic; font-weight: bold; font-size: 1.8rem; text-align: right; padding: 0 2.6rem 0 0; width: 15rem; float: left; height: 10rem; border-right: .1rem solid #999;  }
         dd { width: 60rem; float: right; }
         dd.clear { float: none; margin: 0; height: 1.5rem; }
+        dd ul { margin: 0 0 1.6rem 1.7rem; }
+        .pub-group {
+            clear: both;
+            width: 80rem;
+            margin: 0 0 1.6rem 0;
+            border-top: .1rem solid #ddd;
+            padding-top: 1rem;
+        }
+        .pub-group summary {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.7rem;
+            padding: .2rem 0;
+            list-style-position: outside;
+        }
+        .pub-group summary:hover { color: #000; }
+        .pub-group[open] summary { color: #000; margin-bottom: .8rem; }
+        .pub-group ol { margin: .8rem 0 .8rem 2rem; }
+        .pub-group li { margin: 0 0 1rem 0; }
         .u-keyline {
             position: relative
         }
@@ -112,10 +131,6 @@
                 padding-right: 0
             }
         }
-        .Contact:after {
-                content: "(053) 612-0793";
-                padding-left: 1.6rem
-            }
 
 
         .container {
@@ -149,7 +164,7 @@
           opacity: 1;
         }
 
-        
+
         .text{
             background-color: #d8d9db;
             color: white;
@@ -227,7 +242,7 @@
             width: 100%;
           }
         }
-        
+
      </style>
 
 </head>
@@ -235,103 +250,145 @@
 <body>
 
     <div id="page-wrap">
-    
+
         <img src="./images/my_photo_Fotor.jpg" width="250" alt="My Photo" id="pic" />
-    
+
         <div id="contact-info" class="vcard">
-        
+
             <!-- Microformats! -->
-        
+
             <h1 class="fn">Evgeny Shulga</h1>
-            
+
 
             <p>
-            Email: <a class="email" href="mailto:shulgaevgeny@gmail.com">shulgaevgeny@gmail.com</a> 
+            Email: <a class="email" href="mailto:shulgaevgeny@gmail.com">shulgaevgeny@gmail.com</a>
 
             </p>
         </div>
         <div id="objective">
             <p>
-                I am an experienced researcher with a vast background in data analysis, physics-based simulations and detector development. 
+                I am an experienced researcher with a vast background in detector development, data analysis
+                (ATLAS, sPHENIX, STAR), and physics-based simulations.
             </p>
             <p>
-                I am self-motivated, fast learning, and adaptive to a new environment. 
+                In my work, I adhere to the principle of adaptive planning and strive to learn and develop new skills.
+                I am curious, self-motivated, and adaptive to a new environment.
             </p>
             <p>
-                Currently, I am doing R&D work in a detector lab and testing software for the calibration of a new experiment.
+                Currently, I am an Assistant Physicist at Brookhaven National Laboratory, working on STAR data analysis,
+                EIC/ePIC detector development and commissioning.
             </p>
         </div>
-        
+
         <div class="clear"></div>
 
         <dl>
 
             <dd class="clear"></dd>
-            <h2>EXPERIENCE</h2>
+            <h2>SCIENTIFIC INTERESTS</h2>
             <dd class="clear"></dd>
-            
-            <dt>2024 – Present</dt>
+
+            <dt>Detector physics</dt>
             <dd>
-                <h3>Research Staff at Brookhaven National Laboratory</h3>
-                <p> STAR data analysis;
-                    EIC related work
+                <p>
+                    Detector development, construction of scientific equipment (tracking and particle identification)
+                    for particle physics and nuclear experiments, detector performance optimization, in-situ detector
+                    performance control systems, detector aging.
                 </p>
             </dd>
 
             <dd class="clear"></dd>
+            <dt>Particle physics</dt>
+            <dd>
+                <p>
+                    Physics of high-energy interactions, global event characterization, analysis of experimental data,
+                    particle tracking and particle identification at high particle density and high luminosity.
+                </p>
+            </dd>
 
+            <dd class="clear"></dd>
+            <dt>Software development</dt>
+            <dd>
+                <p>
+                    Software for fast data reconstruction (tracking, identification) and detector calibration
+                    involving AI/ML techniques.
+                </p>
+            </dd>
+
+            <dd class="clear"></dd>
+            <h2>EXPERIENCE</h2>
+            <dd class="clear"></dd>
+
+            <dt>2024 – Present</dt>
+            <dd>
+                <h3>Assistant Physicist at Brookhaven National Laboratory</h3>
+                <ul>
+                    <li>Leading STAR experiment data analysis (C++, Bash, HTCondor)</li>
+                    <li>Leading detector development for beam monitoring for the safety of the future Electron Ion Collider detector (C++, Bash, Python)</li>
+                    <li>Led detector development for the GridPix detector based on Timepix technology (LDRD C 2025 project)</li>
+                    <li>Design and development of silicon detectors for polarimetry</li>
+                    <li>Control-Account Manager (CAM) for ePIC detector non-beam commissioning: 17 FTE, $11M</li>
+                </ul>
+            </dd>
+
+            <dd class="clear"></dd>
             <dt>2022 – 2024</dt>
             <dd>
-                <h3>Postdoctoral Associate at Stony Brook University</h3>
-                <p>sPHENIX TPC design, construction and commissioning;
-                    Charecterization of the sPHENIX TPC modules; 
-                    Data analysis for TPC detector: space-charge calibration;
-                    Member of the sPHENIX calibration taskforce, aiming to collect and define the calibration strategy (procedures to check/tune detector performance) for all detector subsystems
-                    
-                </p>
+                <h3>Senior Postdoctoral Associate at Stony Brook University</h3>
+                <ul>
+                    <li>Led construction and commissioning of the sPHENIX Time Projection Chamber (TPC)</li>
+                    <li>Led technical maintenance of the TPC, worth $0.5 million, keeping it fully functioning</li>
+                    <li>Led R&D for ion-backflow (IBF) suppression for the EIC 2nd detector's GridPix TPC</li>
+                    <li>Developed the calibration strategy for detector subsystems as a member of the sPHENIX calibration task force</li>
+                    <li>Developed sPHENIX TPC calibration and tracking software (C++, Bash, HTCondor)</li>
+                    <li>Built a DAQ system for the modules testing setup at Stony Brook University: script-based control of the gas system, x-ray tube, picoammeters, and high-voltage supply (C++, Bash, Python)</li>
+                </ul>
             </dd>
 
             <dd class="clear"></dd>
             <dt>2018 – 2022</dt>
             <dd>
                 <h3>Postdoctoral Researcher at Weizmann Institute of Science</h3>
-                <p>Development of the multi-layer gas electron multipliers (GEMs) for the sPHENIX TPC with the reduced Ion Back Flow; 
-                    Analysis of experimental data for TPC prototype experiment: charge sharing studies;
-                    Member of the sPHENIX calibration taskforce, aiming to collect and define the calibration strategy (procedures to check/tune detector performance) for all detector subsystems
-                    
-                </p>
+                <ul>
+                    <li>Led the laboratory effort for detector development and production for the sPHENIX TPC; produced 130 framed GEMs</li>
+                    <li>Designed and developed the bipolar mesh, improving ion-backflow suppression in the TPC down to 0 (published 2020)</li>
+                    <li>Produced detector components under ISO 6 class 1000 conditions for the sPHENIX TPC</li>
+                    <li>Developed the calibration strategy for all detector subsystems as a member of the sPHENIX calibration task force</li>
+                    <li>Developed simulations of charge-flux distributions in the detector for electric field distortion calculations (C++, Python, Bash, HTCondor)</li>
+                </ul>
             </dd>
-            
+
             <dd class="clear"></dd>
-            <dt>2010 – 2016</dt>
+            <dt>2010 – 2018</dt>
             <dd>
-                <h3>Research staff member at NRNU MEPhI</h3>
-                <p>Development of the transition radiation detectors; 
-                    Maintenance and calibration of the Transition Radiation Tracker of the ATLAS detector; 
-                    Analysis of experimental data; Participation in small-scale scientific projects at the laboratory at NRNU MEPhI; 
-                    Administrative work. 
-                </p>
+                <h3>Research Staff Member at NRNU MEPhI</h3>
+                <ul>
+                    <li>Led the analysis of experimental data from the ATLAS experiment at CERN (statistical methods, C++, ROOT)</li>
+                    <li>Maintenance and calibration of the Transition Radiation Tracker (TRT) of the ATLAS experiment</li>
+                    <li>Developed a unique Monte Carlo simulation of radiation detection for detector R&D, published in 2019 (statistical methods, C++, ROOT)</li>
+                    <li>Suggested and developed a social networking portal for scientific collaboration at NRNU MEPhI</li>
+                </ul>
             </dd>
 
             <dd class="clear"></dd>
             <h2>EDUCATION</h2>
             <dd class="clear"></dd>
-            
+
             <dt>2010 - 2018</dt>
             <dd>
                 <h3>Graduate student at the National Research Nuclear University MEPhI, Moscow, Russia (NRNU MEPhI)</h3>
-                <p>Ph.D. in Physics of Atomic Nucleus and Elementary Particles: 
-                    “Charged particle spectra and nuclear modification factors in proton-nucleus (p+208Pb) interactions at an energy of 5.02 TeV 
+                <p>Ph.D. in Physics of Atomic Nucleus and Elementary Particles:
+                    “Charged particle spectra and nuclear modification factors in proton-nucleus (p+208Pb) interactions at an energy of 5.02 TeV
                     per pair of nucleons in the ATLAS experiment at the LHC” under the supervision of Dr. A. Romaniouk, defended 19.03.2018.
                 </p>
             </dd>
-            
+
             <dd class="clear"></dd>
             <dt>2004 - 2010</dt>
             <dd>
                 <h3>Undergraduate student at NRNU MEPhI</h3>
-                <p>Diploma equivalent to the M.S. in Atomic Nucleus and Particle Physics: 
-                    “Study of the four-lepton decay of the Higgs boson by Monte Carlo simulations in the ATLAS experiment at the initial LHC energies” 
+                <p>Diploma equivalent to the M.S. in Atomic Nucleus and Particle Physics:
+                    “Study of the four-lepton decay of the Higgs boson by Monte Carlo simulations in the ATLAS experiment at the initial LHC energies”
                     under the supervision of L.R. Flores Castillo (University of Wisconsin), NRNU MEPhI internal supervision of S. Smirnov, defended 01.05.2010.
                 </p>
             </dd>
@@ -342,7 +399,7 @@
                 <h3>High school student at “Lyceum” № 1523, and high school № 1640, Moscow, Russia</h3>
                 <p></p>
             </dd>
-            
+
             <dd class="clear"></dd>
 
             <dd class="clear"></dd>
@@ -360,12 +417,20 @@
             <dd class="clear"></dd>
             <h2>INTERNATIONAL COLLABORATIONS</h2>
             <dd class="clear"></dd>
+            <dt>2024 – Present</dt>
+            <dd>
+                <h3>STAR experiment at the RHIC facility at BNL</h3>
+                <p>
+                    Cold QCD group: single spin asymmetry for J/ψ production in p+p and p+Au collisions.
+                </p>
+            </dd>
+            <dd class="clear"></dd>
             <dt>2018 – Present</dt>
             <dd>
                 <h3>sPHENIX experiment at the RHIC facility at BNL</h3>
                 <p>
-                    Development of the multi-layer GEMs for the sPHENIX TPC with the reduced Ion Back Flow;
-                    Simulation studies of the spacecharge in the TPC
+                    sPHENIX TPC design, construction and commissioning with the reduced Ion Back Flow;
+                    simulation studies of the space charge in the TPC.
                 </p>
 
             </dd>
@@ -374,31 +439,98 @@
             <dd>
                 <h3>ATLAS experiment at the LHC CERN</h3>
                 <p>
-                    Transition Radiation Tracker (TRT) performance studies: 
-                    software development, detector performance optimization; 
-                    Preparation for the TRT test beams at the SPS (2012, 2016, 2017, 2018); 
-                    Research for the Heavy Ion working group: data validation, physics data analysis 
+                    Transition Radiation Tracker (TRT) performance studies:
+                    software development, detector performance optimization;
+                    Preparation for the TRT test beams at the SPS (2012, 2016, 2017, 2018);
+                    Research for the Heavy Ion working group: data validation, physics data analysis
                 </p>
 
             </dd>
-            
+
+            <dd class="clear"></dd>
+            <h2>LONG TERM VISITS</h2>
+            <dd class="clear"></dd>
+            <dt>Since 2009</dt>
+            <dd>
+                <h3>Visiting scientist at CERN (2–4 months per year)</h3>
+                <p>
+                    Detector maintenance and performance studies; physics data analysis; data-taking shifts.
+                </p>
+            </dd>
+            <dd class="clear"></dd>
+            <dt>2012, 2014</dt>
+            <dd>
+                <h3>Visiting student at the Weizmann Institute of Science (about 2 months each)</h3>
+                <p>
+                    Physics data analysis; preparation of results for publication.
+                </p>
+            </dd>
+
+            <dd class="clear"></dd>
+            <h2>INTERNATIONAL SCHOOLS</h2>
+            <dd class="clear"></dd>
+            <dt>May 2012</dt>
+            <dd>
+                <h3>4th Berkeley School on Collective Dynamics in High-Energy Collisions</h3>
+                <p>Lawrence Berkeley National Laboratory, United States, May 14–18, 2012.</p>
+            </dd>
+            <dd class="clear"></dd>
+            <dt>Feb 2012</dt>
+            <dd>
+                <h3>15th Moscow International ITEP School of Physics</h3>
+                <p>Moscow, Russia, February 14–21, 2012.</p>
+            </dd>
+
 
             <dd class="clear"></dd>
             <dd class="clear"></dd>
             <h2>PUBLICATIONS</h2>
             <dd class="clear"></dd>
-            <h3>Publications in refereed journals with my significant contribution:</h3>
-            <dd class="clear"></dd>
+            <p>
+                Author of the ATLAS Collaboration (2011–2021). Full publication list on
+                <a href="https://scholar.google.com/citations?hl=en&user=yy5IG9gAAAAJ">Google Scholar</a>.
+            </p>
+
+            <details class="pub-group" open>
+                <summary>Selected journal publications with substantial personal contribution (10)</summary>
+                <ol>
+                    <li>A. Boldyrev et al. (incl. E. Shulga), “Tracking performance of GasPixel detectors in test beam studies”, <a href="https://doi.org/10.1016/j.nima.2015.10.087">NIMA 807, 47-55 (2016)</a></li>
+                    <li>A.A. Savchenko et al. (incl. E. Shulga), “X-ray transition radiation from a polypropylene radiator: experiment and Geant4”, Phys. Atom. Nucl. 81, 1618 (2018)</li>
+                    <li>J. Alozy et al. (incl. E. Shulga), “Identification of particles with Lorentz factor up to 10<sup>4</sup> with TR Detectors based on micro-strip silicon detectors”, <a href="https://doi.org/10.1016/j.nima.2019.02.032">NIM A 927, 1-13 (2019)</a></li>
+                    <li>J. Alozy et al. (incl. E. Shulga), “First measurements of the spectral and angular distribution of TR using a silicon pixel sensor on a Timepix3 chip”, <a href="https://doi.org/10.1016/j.nima.2018.11.062">NIM A 936, 523-526 (2019)</a></li>
+                    <li>F. Dachs et al. (incl. E. Shulga), “Transition radiation measurements with a Si and a GaAs pixel sensor on a Timepix3 chip”, <a href="https://doi.org/10.1016/j.nima.2019.03.092">NIM A 958 (2020)</a></li>
+                    <li>J. Alozy et al. (incl. E. Shulga), “Studies of the spectral and angular distributions of transition radiation using a silicon pixel sensor on a Timepix3 chip”, NIM A 961 (2020) 163681</li>
+                    <li>E. Shulga et al., “Measurement of the Ion Blocking by the Passive Bipolar Grid”, <a href="https://doi.org/10.1109/TNS.2020.3042311">IEEE Trans. Nucl. Sci. 68, 1, 59-69 (2021)</a></li>
+                    <li>D. Baranyai et al. (incl. E. Shulga), “Fast spark-detection system for GEM detectors”, <a href="https://doi.org/10.1016/j.nima.2024.170171">NIM A 1072, 170171 (2025)</a></li>
+                    <li>Y. Huang et al. (incl. E. Shulga), “Variable Rate Neural Compression for Sparse Detector Data”, <a href="https://arxiv.org/abs/2411.11942">Patterns 7, 3, 101452 (2024)</a></li>
+                    <li>F. Rathmann et al. (incl. E. Shulga), “Eliminating beam-induced depolarizing effects in the hydrogen jet target for high-precision proton beam polarimetry at the Electron-Ion Collider”, Phys. Rev. Accel. Beams 29 (2026) 2, 021001</li>
+                </ol>
+            </details>
+
+            <details class="pub-group">
+                <summary>Conference proceedings (6)</summary>
+                <ol start="11">
+                    <li>E. Shulga for the ATLAS Collaboration, “Centrality dependence of charged particle production in proton-lead collisions measured by ATLAS”, NPA 926 (2014) 64–72</li>
+                    <li>E. Shulga for the ATLAS Collaboration, “Charged particle production in Pb-Pb and p-Pb collisions measured by the ATLAS detector”, JoP: Conference Series 668 (2016), no. 1, 012078</li>
+                    <li>E. Shulga for the ATLAS Collaboration, “Centrality dependence of low-pT and high-pT particle production in proton-lead collisions with ATLAS”, NPA 956 (2016) 565-568</li>
+                    <li>E. Shulga for the ATLAS Collaboration, “Charged particle production in p+Pb collisions measured by the ATLAS detector”, JoP: Conference Series 798 (2017), no. 1, 012066</li>
+                    <li>N. Belyaev et al. (incl. E. Shulga), “Measurements of angular distribution and spectrum of transition radiation with a GridPix detector”, JoP: Conf. Series 934 (2017), no. 1, 012049</li>
+                    <li>K. Dehmelt et al. (incl. E. Shulga), “Passive Gating Grid for Ion Back Flow Suppression in High Luminosity Collider Experiments”, 2019 IEEE Nuclear Science Symposium and Medical Imaging Conference (NSS/MIC)</li>
+                </ol>
+            </details>
+
+            <details class="pub-group">
+                <summary>Preliminary results (2)</summary>
+                <ol start="17">
+                    <li>ATLAS Collaboration, “Charged hadron production in p+Pb collisions at √s<sub>NN</sub>=5.02 TeV measured at high transverse momentum by the ATLAS experiment”, ATLAS-CONF-2014-029</li>
+                    <li>ATLAS Collaboration, “Transverse momentum, rapidity, and centrality dependence of Charged Particle Production in p+Pb √s<sub>NN</sub>=5.02 TeV collisions measured by ATLAS experiment at the LHC”, ATLAS-CONF-2013-107</li>
+                </ol>
+            </details>
+
 
             <dd class="clear"></dd>
-            <script src="https://bibbase.org/show?bib=https://bibbase.org/network/files/R8qgTdFab9YRSrtB9&commas=true&jsonp=1&authorFirst=1&folding=1"></script> 
-            <dd class="clear"></dd>
-            <h4><A HREF = "https://scholar.google.com/citations?hl=en&user=yy5IG9gAAAAJ">Google scholar.</A></h4>
+            <h3>Highlights:</h3>
 
-    
-            <dd class="clear"></dd>
-            <h3>Highlights:</h2>`
-    
             <!-- Portfolio Gallery Grid -->
             <div class="row">
                 <div class="column">
@@ -421,7 +553,7 @@
                     <div class="middle">
                         <div class="text">
                             <a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900218316383?via%3Dihub">e-Link</a>
-                        </div>   
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -434,23 +566,89 @@
                         <div class="middle">
                           <div class="text">
                             <a href="https://www.sciencedirect.com/science/article/pii/S0370269316306244?via%3Dihub<">e-Link</a>
-                          </div>   
+                          </div>
                       </div>
-                      
+
                     </div>
                   </div>
-  
+
             </div>
-          
-                    
+
+            <dd class="clear"></dd>
+            <h2>TALKS AT INTERNATIONAL CONFERENCES & WORKSHOPS</h2>
+            <dd class="clear"></dd>
+
+            <dt>2026</dt>
+            <dd><p>ePIC & EICUG meeting, “Connecting the Dots: Polarimetry from the BNL Booster to the EIC”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2025</dt>
+            <dd><p>APS Global 2025, “sPHENIX Tracking performance and Related Physics Studies”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2024</dt>
+            <dd><p>CPAD 2024 workshop, “Viability of GridPix TPC for the EIC second detector”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2023</dt>
+            <dd><p>CPAD 2023 workshop, “sPHENIX TPC in the 2023 commissioning run”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2022</dt>
+            <dd><p>CPAD 2022 workshop, “Design and construction of the sPHENIX TPC”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2020</dt>
+            <dd><p>RD51 Collaboration Meeting, “Ion backflow suppression by the passive bi-polar grid”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2019</dt>
+            <dd><p>New Trends in HEP 2019, “Status and prospects of heavy-ion physics at the LHC”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2016</dt>
+            <dd><p>The 2nd International Conference on Particle Physics and Astrophysics (ICPPA2016), “Charged particle spectra in pPb collisions”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2015</dt>
+            <dd><p>XXV International Conference on Ultrarelativistic Nucleus-Nucleus Collisions (Quark Matter 2015), “Charged particle production in proton-lead collisions measured by the ATLAS detector”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2015</dt>
+            <dd><p>XV International Conference on Strangeness In Quark Matter (SQM2015), “Charged particle production in lead-lead and proton-lead collisions measured by the ATLAS detector”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2014</dt>
+            <dd><p>Collider Cross Talk, “Charged hadron production in p+Pb collisions at √s_NN=5.02 TeV measured at high transverse momentum by ATLAS”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2014</dt>
+            <dd><p>Nuclear Physics Section of the annual meeting of the Russian Academy of Sciences, “Charged particle production in proton-lead collisions measured by the ATLAS detector”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2013</dt>
+            <dd><p>II International Conference on the Initial Stages of High-Energy Nuclear Collisions (IS2013), “Centrality dependence of charged particle production in proton-lead collisions measured by ATLAS”</p></dd>
+
+            <dd class="clear"></dd>
+            <h2>AWARDS</h2>
+            <dd class="clear"></dd>
+            <dt>2023</dt>
+            <dd><p>RHIC/AGS Merit Award: “In recognition of numerous key contributions to the design, construction, commissioning, and analysis of the sPHENIX time projection chamber”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2018</dt>
+            <dd><p>The Sir Clore Postdoctoral Fellowship for 2018–2019</p></dd>
+            <dd class="clear"></dd>
+            <dt>2015</dt>
+            <dd><p>Competition of scientific projects carried out by young scientists: “Study of prompt and non-prompt J/ψ production suppression in Pb+Pb collisions at √s_NN=2.76 TeV with the ATLAS detector”</p></dd>
+
+            <dd class="clear"></dd>
+            <h2>GRANTS</h2>
+            <dd class="clear"></dd>
+            <dt>2025</dt>
+            <dd><p>LDRD C project: “Gating grid for the GridPix detector”</p></dd>
+            <dd class="clear"></dd>
+            <dt>2016</dt>
+            <dd><p>Russian Science Foundation: “Development of Transition Radiation detectors for hadron identification in TeV energy range”. Research grant number 16-12-10277 (executant)</p></dd>
+            <dd class="clear"></dd>
+            <dt>2012</dt>
+            <dd><p>CRDF Mini-Grant: “Gaseous Pixel Detectors for the ATLAS Inner Detector upgrade for the future sLHC at CERN”. Research grant number BG1311 (executive)</p></dd>
+
             <dd class="clear"></dd>
             <h2>SKILLS</h2>
             <dd class="clear"></dd>
             <dt>Teamwork</dt>
             <dd>
-                
-                <p>I have vast experience working in the research teams of only 
-                    a few people and of dozens of scientists, engineers, and technicians. 
+
+                <p>I have vast experience working in the research teams of only
+                    a few people and of dozens of scientists, engineers, and technicians.
                     I greatly value good relations at work and do my best to prevent conflicting situations.
                 </p>
             </dd>
@@ -459,20 +657,28 @@
             <dt>Communication</dt>
             <dd>
                 <p>
-                    Working at the university and in the large international collaboration, like ATLAS, 
-                    requires good communication skills that I fully possess. In the past years, 
-                    I actively participated in hundreds of planned and ad-hoc meetings of all different levels: 
-                    from very technical day-by-day discussion to the meeting with the NRNU MEPhI and ATLAS management.
-                     
+                    Working at the university and in large international collaborations, like ATLAS and sPHENIX,
+                    requires good communication skills that I fully possess. In the past years,
+                    I actively participated in hundreds of planned and ad-hoc meetings of all different levels:
+                    from very technical day-by-day discussion to meetings with management.
+
                 </p>
             </dd>
             <dd class="clear"></dd>
             <dt>Computer</dt>
             <dd>
                 <p>
-                    Scientific Computing: C++, Matlab, Python, PyTorch, OpenCV<br /> 
-                    Platforms: UNIX, MS Windows<br />
-                    Linux Frameworks: Root, Garfield++, FreeCAD, LaTeX, MS Office
+                    Scientific Computing: C++, Python (PyTorch), Git, Bash, ROOT, Garfield++, GEANT<br />
+                    Engineering/CAD: Altium, Inventor, LabVIEW<br />
+                    Platforms: UNIX, MS Windows, Linux<br />
+                    Other: LaTeX, MS Office
+                </p>
+            </dd>
+            <dd class="clear"></dd>
+            <dt>Lab work</dt>
+            <dd>
+                <p>
+                    Gas-mixing systems, HV power supplies, radioactive sources, GEMs, large magnets, MCA, LabVIEW
                 </p>
             </dd>
             <dd class="clear"></dd>
@@ -480,50 +686,38 @@
             <dd>
                 <p>
                     Russian: native<br />
-                    English: fluent <br />                    
-                    Hebrew: beginner 
+                    English: fluent <br />
+                    Hebrew: beginner
                 </p>
             </dd>
-            
+
+            <dd class="clear"></dd>
+            <h2>OTHER ACTIVITIES</h2>
+            <dd class="clear"></dd>
+            <dt>Outreach</dt>
+            <dd>
+                <ul>
+                    <li>Volunteer at BNL open days: guiding groups of students and visitors</li>
+                    <li>Volunteer at CERN open days: guiding groups of students and visitors</li>
+                    <li>Development of a website for graduate and undergrad students on modern methods of experimental data analysis in particle physics: <a href="http://particle.mephi.ru/en/masterclasses-en/">particle.mephi.ru</a></li>
+                    <li>Development of the NRNU MEPhI Information portal for young scientists: <a href="http://scif.mephi.ru/">scif.mephi.ru</a></li>
+                </ul>
+            </dd>
+
+            <dd class="clear"></dd>
+            <h2>HOBBIES</h2>
+            <dd class="clear"></dd>
+            <dt>Outside work</dt>
+            <dd>
+                <p>Hiking; Running; Reading books</p>
+            </dd>
+
             <dd class="clear"></dd>
 
             <dd class="clear"></dd>
         </dl>
-    
-
-    <!--
-        <h2>SOCIAL NETWORKS </h2>
-        <div class="clear"></div>
-
-        <h4>My LinkedIn:</h4>
-        
-        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-        
-
-        <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="evgeny-shulga-42008b34"><a class="LI-simple-link" href='https://il.linkedin.com/in/evgeny-shulga-42008b34?trk=profile-badge'>Evgeny Shulga</a></div>
-        <div class="clear"></div>
 
 
-
-        <div class="clear"></div>
-        <dd class="clear"></dd>
-        <h4>My Instagram:</h4>
-        
-        <div class="clear"></div>
-        <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
-        <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
-        <ul class="juicer-feed" data-feed-id="e__shulga" data-per="3"><h1 class="referral"><a href="https://www.juicer.io">Powered by Juicer.io</a></h1></ul>
-
-        <div class="clear"></div>
-
-        <h4>My Sports Activities:</h4>
-
-        <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/37842573/activity-summary/94aa591bc2650f826e8a1f32f3973f7b0e0cbc19'></iframe>
-        
-        <div class="clear"></div>
-
-        <h4>To be Continued ...</h4>
-        -->
     </div>
     <div class="l-Wrapper u-keyline">
         <div class="l-Footer">
